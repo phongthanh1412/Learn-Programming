@@ -1,0 +1,15 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main() {
+    float sotien = 0, laisuat = 0, lamphat = 0;
+    cin >> sotien >> laisuat >> lamphat;
+    float tienlai_12 = sotien * laisuat / 100;
+    float tienlai_1 = sotien * laisuat * 1 / (12 * 100);
+    float tongtien = sotien + tienlai_12;
+    cout << fixed << setprecision(0) << "Tien lai sau 12 thang: " << tienlai_12 << endl;
+    cout << fixed << setprecision(0) << "Tien lai sau 1 thang: " << tienlai_1 << endl;
+    cout << fixed << setprecision(0) << "Tong tien sau 12 thang: " << tongtien << endl;
+    cout << "Tong tien sau 12 thang lam phat: " << tongtien * lamphat / 100 + sotien << endl;
+    return 0;
+}
